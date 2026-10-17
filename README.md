@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/branding/charge-alert.png" width="144" height="144" alt="Charge Alert logo" />
+  <img src="assets/branding/charge-alert.png" width="144" height="144" alt="شعار تنبيه الشحن · Charge Alert logo" />
 
   <h1>Charge Alert · تنبيه الشحن</h1>
 
@@ -9,64 +9,104 @@
   <p>
     <a href="https://github.com/ahmadibrahim4geo/ChargeAlert/raw/refs/heads/main/ChargeAlert.apk"><strong>⬇ تحميل التطبيق · Download APK</strong></a>
     &nbsp;·&nbsp;
-    <a href="#البناء-من-المصدر--build">Build</a>
+    <a href="#build">البناء · Build</a>
     &nbsp;·&nbsp;
-    <a href="#المطور--developer">Developer</a>
+    <a href="#developer">المطور · Developer</a>
   </p>
 
-  <p>Version 1.1.0 · Android 7.0+ · Kotlin · Jetpack Compose · MIT</p>
+  <p>الإصدار · Version 1.1.0 · Android 7.0+ · Kotlin · Jetpack Compose · MIT</p>
 </div>
 
-## التطبيق
+## التطبيق · About
+
+### العربية
 
 يقرأ Charge Alert نسبة البطارية التي يبلغ بها أندرويد، وينبّهك عند الوصول لهدف تختاره بين **50% و100%**. يميّز مؤشر الشحن بين:
 
-- **القوس المضيء:** شحنك الحالي، والرقم في الوسط هو النسبة الفعلية.
+- **القوس المضيء:** شحنك الحالي، والرقم في الوسط هو نسبة البطارية الفعلية.
 - **الخط الأبيض:** النسبة التي تريد الوصول إليها.
 - **النبضة:** الشحن نشط؛ مكانها لا يتقدم إلا مع تغير قراءة البطارية.
 
 عند إيقاف الحركة أو تشغيل توفير الطاقة يوضح التطبيق سبب ثبات العرض.
 
+### English
+
+Charge Alert reads the battery percentage reported by Android and alerts you when it reaches a target you choose between **50% and 100%**. The charging indicator separates three things:
+
+- **Filled arc:** your current charge; the number in the center is the actual battery percentage.
+- **White tick:** your selected charge target.
+- **Pulse:** charging is active; its position only advances when the battery reading changes.
+
+When motion is disabled or Battery Saver is enabled, the app explains why the display is still.
+
 ## المميزات · Features
 
-- 20 تصميم شحن: الزجاج المنشوري، الدوائر الذكية، مدارات البلازما، القمر، المحيط، الكريستال، الغروب وغيرها.
-- معرض مصغّرات ومعاينة كاملة، مع العربية والإنجليزية.
-- إغلاق شاشة الشحن يُبقي المراقبة فعالة؛ إيقاف التنبيه يمنع تكراره في نفس الجلسة.
-- تكرار اختياري كل خمس دقائق وغفوة محفوظة. يتوقف الصوت والاهتزاز بعد دقيقة.
+### العربية
+
+- 20 تصميم شحن، منها الزجاج المنشوري والدوائر الذكية ومدارات البلازما والقمر والمحيط والكريستال والغروب.
+- معرض مصغّرات ومعاينة كاملة، مع دعم العربية والإنجليزية.
+- إغلاق شاشة الشحن يُبقي المراقبة فعالة؛ إيقاف تنبيه الهدف يمنع تكراره في نفس الجلسة.
+- تكرار اختياري كل خمس دقائق وغفوة محفوظة. يتوقف صوت التنبيه واهتزازه بعد دقيقة.
 - قراءات نسبة الشحن والحرارة والجهد والتيار، دون افتراض سعة بطارية وهمية.
 - خدمة مراقبة تعتمد على تحديثات أندرويد، ومهمة استعادة واحدة في الخلفية.
-- واجهة تحافظ على التصميم المختار عند تقليل الحركة، وأيقونة جديدة تدعم أيقونات أندرويد الأحادية.
+- الاحتفاظ بالتصميم المختار عند تقليل الحركة، وأيقونة جديدة تدعم أيقونات أندرويد الأحادية.
 
-**English:** Choose a charge target, follow the real Android battery percentage, and receive a dismissible alarm when the target is reached. The filled arc shows current charge, the white tick marks your target, and a pulse indicates active charging. Choose from 20 designs with a full-screen preview and reduced-motion support.
+### English
+
+- 20 charging designs, including Prism Glass, Circuit Studio, Plasma Orbits, Lunar Eclipse, Ocean Depth, Crystal Facets, and Sunset Horizon.
+- A thumbnail gallery and full-screen preview, with Arabic and English support.
+- Closing the charging screen keeps monitoring active; dismissing the target alarm prevents it from repeating in the same charging session.
+- Optional repeats every five minutes and a saved snooze. Alarm sound and vibration stop after one minute.
+- Battery percentage, temperature, voltage, and current readings, without assuming a made-up battery capacity.
+- A monitoring service driven by Android battery updates, with one background recovery task.
+- The selected design stays visible with reduced motion, and the new icon supports Android monochrome icons.
 
 ## معاينات · Screenshots
 
 الصور التالية ناتجة من اختبارات الواجهة ببيانات توضيحية.
 
+These screenshots come from UI tests using illustrative data.
+
 <p align="center">
-  <img src="app/src/test/screenshots/charging-ar.png" width="270" alt="Arabic charging indicator with current charge and target" />
-  <img src="app/src/test/screenshots/appearance/minimal_glass.png" width="270" alt="Prism Glass charging design" />
-  <img src="app/src/test/screenshots/appearance/matrix_pulse.png" width="270" alt="Circuit Studio charging design" />
+  <img src="app/src/test/screenshots/charging-ar.png" width="270" alt="مؤشر الشحن بالعربية · Arabic indicator showing current charge and target" />
+  <img src="app/src/test/screenshots/appearance/minimal_glass.png" width="270" alt="الزجاج المنشوري · Prism Glass charging design" />
+  <img src="app/src/test/screenshots/appearance/matrix_pulse.png" width="270" alt="الدوائر الذكية · Circuit Studio charging design" />
 </p>
 
 <details>
 <summary>عرض التصميمات العشرين · View all 20 designs</summary>
 
-![Twenty charging designs](app/src/test/screenshots/appearance/all-20-designs.png)
+![التصميمات العشرون · All 20 charging designs](app/src/test/screenshots/appearance/all-20-designs.png)
 
 </details>
 
-## تحميل وتثبيت · Download
+## تحميل وتثبيت · Download and installation
 
-[**تحميل ChargeAlert.apk — الإصدار 1.1.0**](https://github.com/ahmadibrahim4geo/ChargeAlert/raw/refs/heads/main/ChargeAlert.apk)
+[**تحميل الإصدار 1.1.0 · Download version 1.1.0**](https://github.com/ahmadibrahim4geo/ChargeAlert/raw/refs/heads/main/ChargeAlert.apk)
 
-يوجد **ملف APK واحد فقط** في المستودع: [ChargeAlert.apk](ChargeAlert.apk). يُستبدل عند تحديث التطبيق بدل الاحتفاظ بنسخ متكررة.
+### العربية
 
-هذا بناء **Debug للتجربة**، وليس إصدار متجر موقعًا بمفتاح الإنتاج. التحديث فوق نسخة مثبّتة يتطلب نفس مفتاح التوقيع. لا تحذف نسخة مستخدمة قبل حفظ إعداداتها إذا ظهر تعارض توقيع.
+يوجد **ملف APK واحد فقط** في المستودع: [ChargeAlert.apk](ChargeAlert.apk). يُستبدل عند تحديث التطبيق بدل الاحتفاظ بنسخ متكررة. يتطلب أندرويد 7.0 أو أحدث.
 
-## البناء من المصدر · Build
+هذا بناء **Debug للتجربة**، موقّع بمفتاح التطوير المحلي، وليس إصدار متجر موقعًا بمفتاح الإنتاج. التحديث فوق نسخة مثبّتة يتطلب نفس مفتاح التوقيع. إذا ظهر تعارض توقيع، احفظ إعداداتك قبل حذف النسخة المستخدمة.
 
-المتطلبات: **JDK 17**، وAndroid SDK **36**. الحد الأدنى API 24 والهدف API 35. اختبارات Robolectric تعمل على API 34 مع Java 17.
+### English
+
+The repository contains **one current APK**: [ChargeAlert.apk](ChargeAlert.apk). It is replaced when the app is updated, rather than keeping duplicate builds. Android 7.0 or later is required.
+
+This is a **Debug test build**, signed with a local development key, rather than a store release signed with a production key. Updating an installed copy requires the same signing key. If Android reports a signature conflict, save your settings before uninstalling that copy.
+
+<a id="build"></a>
+
+## البناء من المصدر · Build from source
+
+### العربية
+
+المتطلبات: **JDK 17** و**Android SDK 36**. الحد الأدنى API 24 والهدف API 35. تعمل اختبارات Robolectric على API 34 مع Java 17.
+
+### English
+
+Requirements: **JDK 17** and **Android SDK 36**. The minimum API is 24 and the target is API 35. Robolectric tests run on API 34 with Java 17.
 
 ```bash
 git clone https://github.com/ahmadibrahim4geo/ChargeAlert.git
@@ -74,57 +114,92 @@ cd ChargeAlert
 ./gradlew testDebugUnitTest lintDebug assembleDebug
 ```
 
-على Windows:
+على Windows · On Windows:
 
 ```powershell
 .\gradlew.bat testDebugUnitTest lintDebug assembleDebug
 ```
 
-- حدّد SDK محليًا من Android Studio أو في local.properties؛ هذا الملف مستثنى من Git.
-- لا يحتاج التطبيق Firebase أو ملف google-services.json أو مفاتيح API.
-- ناتج البناء: app/build/outputs/apk/debug/app-debug.apk.
-- لنسخة release موقعّة: اضبط KEYSTORE_PATH وSTORE_PASSWORD وKEY_ALIAS وKEY_PASSWORD محليًا، ثم شغّل assembleRelease. بدونها يكون بناء release غير موقع.
+### إعداد البناء · Build setup
+
+**العربية**
+
+- حدّد SDK محليًا من Android Studio أو في `local.properties`؛ هذا الملف مستثنى من Git.
+- لا يحتاج التطبيق Firebase أو ملف `google-services.json` أو مفاتيح API.
+- ناتج البناء: `app/build/outputs/apk/debug/app-debug.apk`.
+- لنسخة release موقعّة: اضبط `KEYSTORE_PATH` و`STORE_PASSWORD` و`KEY_ALIAS` و`KEY_PASSWORD` محليًا، ثم شغّل `assembleRelease`. بدونها يكون بناء release غير موقع.
 - لا ترفع ملفات التوقيع أو كلمات المرور للمستودع.
 
-لتسجيل لقطات الواجهة:
+**English**
+
+- Set your SDK location through Android Studio or an ignored `local.properties` file.
+- Firebase, `google-services.json`, and API keys are not required.
+- Build output: `app/build/outputs/apk/debug/app-debug.apk`.
+- For a signed release, set `KEYSTORE_PATH`, `STORE_PASSWORD`, `KEY_ALIAS`, and `KEY_PASSWORD` locally, then run `assembleRelease`. Without these settings, the release build is unsigned.
+- Keep signing files and passwords out of the repository.
+
+لتسجيل لقطات الواجهة · To record UI screenshots:
 
 ```powershell
 .\gradlew.bat testDebugUnitTest '-Proborazzi.test.record=true'
 ```
 
-[GitHub Actions](.github/workflows/android.yml) يشغّل الاختبارات وLint والبناء عند الرفع وطلبات الدمج. نواتجه بناء تطوير، ويظل ChargeAlert.apk ملف التنزيل الموحد.
+[GitHub Actions](.github/workflows/android.yml) يشغّل الاختبارات وLint والبناء عند الرفع وطلبات الدمج. نواتجه بناء تطوير، ويظل `ChargeAlert.apk` ملف التنزيل الموحد.
 
-## حدود التشغيل والقراءات
+[GitHub Actions](.github/workflows/android.yml) runs tests, Lint, and the build on pushes and pull requests. Its APK artifacts are development builds; `ChargeAlert.apk` remains the single repository download.
+
+## حدود التشغيل والقراءات · Behavior and reading limitations
+
+### العربية
 
 - قيود أندرويد والشركات المصنعة قد تؤخر بدء المراقبة من الخلفية. إذا رفض النظام بدء الخدمة يظهر إشعار لبدئها بتدخل المستخدم.
-- Force Stop يوقف التشغيل التلقائي حتى إعادة فتح التطبيق. العرض الكامل يخضع لصلاحيات النظام.
+- الإيقاف الإجباري (Force Stop) يوقف التشغيل التلقائي حتى إعادة فتح التطبيق. العرض الكامل يخضع لصلاحيات النظام.
 - النسبة قراءة أندرويد وليست قياسًا مستقلًا للسعة الكيميائية. القدرة المحسوبة تخص صافي البطارية ولا تمثل قدرة المحول.
 - الوقت المتبقي تقدير مشتق من بيانات النظام، ويُخفى إذا لم تتوفر قراءة مناسبة.
 - لم يُقَس استهلاك الطاقة الفعلي على هاتف ضمن هذه المراجعة؛ اختبارات الواجهة لا تقيسه.
 
-## الملفات · Project
+### English
 
-```text
-app/src/main/          Android application and resources
-app/src/test/          Unit, integration and screenshot tests
-assets/branding/       Logo in SVG and PNG
-docs/                  Review, appearance and release notes
-scripts/               Branding export helper
-.github/workflows/     Automated Android checks
-ChargeAlert.apk        Single current test build
-```
+- Android and manufacturer restrictions may delay background monitoring. If Android blocks the service from starting, a notification lets the user start it.
+- Force Stop prevents automatic operation until the app is reopened. Full-screen display depends on system permissions.
+- The percentage is Android's reading, not an independent measurement of chemical battery capacity. Calculated power is net battery power, not the adapter's output.
+- Remaining time is an estimate derived from system data and is hidden when a suitable reading is unavailable.
+- Actual power consumption has not been measured on a phone during this review; UI tests do not measure it.
 
-راجع [سجل التغييرات](CHANGELOG.md)، [المظهر](docs/APPEARANCE.md)، [تقرير المراجعة](docs/PROJECT_REVIEW.md)، و[المساهمة](CONTRIBUTING.md).
+## الملفات والشروحات · Project files and documentation
+
+| المسار · Path | المحتوى · Contents |
+|---|---|
+| `app/src/main/` | التطبيق وموارده · Android application and resources |
+| `app/src/test/` | اختبارات الوحدة والتكامل والصور · Unit, integration, and screenshot tests |
+| `assets/branding/` | الشعار بصيغتي SVG وPNG · SVG and PNG logo |
+| `docs/` | المراجعة والمظهر والإصدار · Review, appearance, and release documentation |
+| `scripts/` | أداة تصدير الشعار · Branding export helper |
+| `.github/workflows/` | فحوصات أندرويد الآلية · Automated Android checks |
+| `ChargeAlert.apk` | نسخة التجربة الحالية الوحيدة · Single current test build |
+
+- [سجل التغييرات · Changelog](CHANGELOG.md)
+- [المظهر · Appearance](docs/APPEARANCE.md)
+- [تقرير المراجعة · Project review](docs/PROJECT_REVIEW.md)
+- [تفاصيل التحقق من الإصدار · Release verification](docs/RELEASE.md)
+- [عنوان ووصف GitHub Release الجاهزان للنسخ · Copy-ready GitHub Release title and description](docs/RELEASE_NOTES.md)
+- [المساهمة · Contributing](CONTRIBUTING.md)
+
+<a id="developer"></a>
 
 ## المطور · Developer
 
 **أحمد إبراهيم — Ahmad Ibrahim**
 
-- البريد: [ahmadibrahim.geo@gmail.com](mailto:ahmadibrahim.geo@gmail.com)
+- البريد · Email: [ahmadibrahim.geo@gmail.com](mailto:ahmadibrahim.geo@gmail.com)
 - GitHub: [@ahmadibrahim4geo](https://github.com/ahmadibrahim4geo)
 
 بيانات التواصل من بطاقة المطور في مشروع Create FlowArrow Tool. هذا المشروع تطبيق أندرويد؛ لا يحتوي على صفحة index أو موقع إضافي.
 
+Contact details were taken from the developer card in Create FlowArrow Tool. This project is an Android app and does not include an index page or an additional website.
+
 ## الترخيص · License
+
+المشروع متاح بموجب ترخيص MIT. · This project is available under the MIT License.
 
 [MIT License](LICENSE) · Copyright © 2026 Ahmad Ibrahim.
