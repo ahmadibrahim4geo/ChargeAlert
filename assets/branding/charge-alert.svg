@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 18 72 72" width="512" height="512" role="img" aria-labelledby="title">
+  <title id="title">Charge Alert — تنبيه الشحن</title>
+  <rect x="18" y="18" width="72" height="72" rx="16" fill="#091724"/>
+  <path fill="#5BE7F3" d="M49 24H59Q61 24 61 26Q61 28 59 28H49Q47 28 47 26Q47 24 49 24Z"/>
+  <path fill="#5BE7F3" fill-rule="evenodd" d="M42 30H66Q74 30 74 38V72Q74 80 66 80H42Q34 80 34 72V38Q34 30 42 30Z M42 34H66Q70 34 70 38V72Q70 76 66 76H42Q38 76 38 72V38Q38 34 42 34Z"/>
+  <path fill="#FFF" d="M57 36L44 56H53L50 71L65 49H56Z"/>
+</svg>

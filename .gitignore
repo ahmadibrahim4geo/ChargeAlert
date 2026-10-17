@@ -1,0 +1,67 @@
+# Built application files
+*.apk
+!ChargeAlert.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+
+# Files for the ART/DALVIK VM
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+app/build/
+
+# Gradle files
+.gradle/
+build/
+*/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+# Local configuration files (SDK path, secret API keys)
+local.properties
+.env
+.env.local
+
+# Proguard folder
+proguard/
+
+# Log files
+*.log
+
+# Android Studio / IntelliJ IDEA / Kotlin files
+.navigation/
+captures/
+.externalNativeBuild
+.cxx
+*.iml
+.idea/
+.kotlin/
+*.bak
+*.swp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Signing & Keystore files
+*.jks
+*.keystore
+debug.keystore
+
+# Machine-specific integrations and legacy generator metadata
+**/google-services.json
+.aistudio/
+.env.*
+!*.env.example
