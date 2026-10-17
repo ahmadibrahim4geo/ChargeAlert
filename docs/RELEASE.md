@@ -8,9 +8,11 @@
 
 - versionName: 1.1.0
 - versionCode: 2
-- نوع البناء · Build type: Debug للتجربة، موقّع بمفتاح التطوير المحلي · Debug test build, signed with the local development key.
+- نوع البناء · Build type: Release موقّع بمفتاح إصدار مخصص، متاح كتجربة أولية · Release signed with a dedicated release key, offered as a pre-release.
 - applicationId: `com.aistudio.chargealert.btrchk` — محفوظ لتوافق هوية التطبيق · Preserved to retain app identity.
-- SHA-256: `84cd42e92991dd4b3cd2fb994dcf3513c321e2ba135a9c9fd3b0ed7f777df588`
+- SHA-256: `83d3f06d333f057ba82f5111358b807b2aa10c76590f778d1d270bf449ff5a48`
+- الحجم · Size: 11,168,211 bytes.
+- بصمة شهادة التوقيع SHA-256 · Signing certificate SHA-256: `08a5953131c082f9321d41f9b07bbde073ccae9ab428aad187e11c5134510b75`
 
 عنوان ووصف الإصدار باللغتين جاهزان للنسخ في [بيانات GitHub Release](RELEASE_NOTES.md).
 
@@ -32,13 +34,15 @@ A bilingual title and description are ready to copy from [GitHub Release details
 
 ### نتائج التحقق
 
-نجح الأمر: `testDebugUnitTest lintDebug assembleDebug` محليًا، ونجح سير العمل على [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
+نجح الأمر: `testDebugUnitTest lintRelease assembleRelease` محليًا. سبق نجاح فحوصات Debug على [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
 
 - 36 اختبارًا ناجحًا.
-- Android Lint: صفر أخطاء و71 تحذيرًا، تتضمن اقتراحات أسلوبية وتحديثات مكتبات وإعدادات قائمة.
+- Android Lint لـRelease: صفر أخطاء و54 تحذيرًا، تتضمن اقتراحات أسلوبية وتحديثات مكتبات وإعدادات قائمة. كانت نتيجة Debug السابقة صفر أخطاء و71 تحذيرًا.
 - مراجعة صور الأنماط العشرين والمؤشر والأيقونات.
 - مقارنة لقطتين للنبضة بفاصل 500ms: تغيرت 12,854 بكسل داخل منطقة نهاية القوس فقط؛ ظلت النسبة 76% والهدف 80%.
 - لم يُقَس استهلاك الطاقة أو تُختبر دورة شحن على هاتف فعلي ضمن هذه الجلسة.
+- نجح التحقق من توقيع APK بمخطط v2 ومحاذاته، وتأكدت هوية التطبيق والإصدار 1.1.0 وعدم تفعيل وضع Debug في الملف.
+- ملفات الرفع جاهزة محليًا في `build/release-upload/`. مفتاح الإصدار وبياناته مستثنيان من Git؛ راجع [دليل التوقيع](SIGNING.md).
 
 ## English
 
@@ -56,13 +60,15 @@ A bilingual title and description are ready to copy from [GitHub Release details
 
 ### Validation results
 
-`testDebugUnitTest lintDebug assembleDebug` passed locally, and the workflow succeeded on [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
+`testDebugUnitTest lintRelease assembleRelease` passed locally. The previous Debug checks also succeeded on [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
 
 - 36 passing tests.
-- Android Lint: zero errors and 71 warnings, including style suggestions, dependency updates, and existing configuration warnings.
+- Release Android Lint: zero errors and 54 warnings, including style suggestions, dependency updates, and existing configuration warnings. Previous Debug Lint reported zero errors and 71 warnings.
 - Visually reviewed all twenty designs, the charge indicator, and the icons.
 - Compared two pulse screenshots 500ms apart: 12,854 pixels changed only around the arc endpoint; charge stayed at 76% and the target at 80%.
 - Actual power consumption and a full charging cycle were not tested on a physical phone in this session.
+- APK v2 signature and alignment checks passed. App identity, version 1.1.0, and the absence of the debuggable flag were verified.
+- Upload files are prepared locally in `build/release-upload/`. The release key and credentials are excluded from Git; see the [signing guide](SIGNING.md).
 
 ## بيانات المطور · Developer details
 

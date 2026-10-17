@@ -88,13 +88,13 @@ These screenshots come from UI tests using illustrative data.
 
 يوجد **ملف APK واحد فقط** في المستودع: [ChargeAlert.apk](ChargeAlert.apk). يُستبدل عند تحديث التطبيق بدل الاحتفاظ بنسخ متكررة. يتطلب أندرويد 7.0 أو أحدث.
 
-هذا بناء **Debug للتجربة**، موقّع بمفتاح التطوير المحلي، وليس إصدار متجر موقعًا بمفتاح الإنتاج. التحديث فوق نسخة مثبّتة يتطلب نفس مفتاح التوقيع. إذا ظهر تعارض توقيع، احفظ إعداداتك قبل حذف النسخة المستخدمة.
+هذا بناء **Release موقّع بمفتاح إصدار مخصص**، متاح حاليًا للتجربة قبل إتمام اختبارات الهاتف الفعلي. يستخدم مفتاحًا مختلفًا عن نسخة Debug السابقة، لذلك لا يمكن تثبيته كتحديث فوقها. احفظ إعداداتك قبل إزالة النسخة السابقة عند ظهور تعارض توقيع. ستستخدم تحديثات Release القادمة مفتاح الإصدار نفسه.
 
 ### English
 
 The repository contains **one current APK**: [ChargeAlert.apk](ChargeAlert.apk). It is replaced when the app is updated, rather than keeping duplicate builds. Android 7.0 or later is required.
 
-This is a **Debug test build**, signed with a local development key, rather than a store release signed with a production key. Updating an installed copy requires the same signing key. If Android reports a signature conflict, save your settings before uninstalling that copy.
+This is a **Release build signed with a dedicated release key**, currently available for testing before physical-device validation is complete. Its key differs from the previous Debug build, so it cannot update that installation. Save your settings before removing the previous copy if Android reports a signature conflict. Future Release updates must use the same release key.
 
 <a id="build"></a>
 
@@ -129,6 +129,7 @@ cd ChargeAlert
 - ناتج البناء: `app/build/outputs/apk/debug/app-debug.apk`.
 - لنسخة release موقعّة: اضبط `KEYSTORE_PATH` و`STORE_PASSWORD` و`KEY_ALIAS` و`KEY_PASSWORD` محليًا، ثم شغّل `assembleRelease`. بدونها يكون بناء release غير موقع.
 - لا ترفع ملفات التوقيع أو كلمات المرور للمستودع.
+- لبناء وفحص نسخة Release موقعّة وتجهيز ملفات رفعها على Windows، استخدم `powershell -ExecutionPolicy Bypass -File scripts/Build-Release.ps1` بعد ضبط التوقيع محليًا؛ راجع [دليل التوقيع](docs/SIGNING.md).
 
 **English**
 
@@ -137,6 +138,7 @@ cd ChargeAlert
 - Build output: `app/build/outputs/apk/debug/app-debug.apk`.
 - For a signed release, set `KEYSTORE_PATH`, `STORE_PASSWORD`, `KEY_ALIAS`, and `KEY_PASSWORD` locally, then run `assembleRelease`. Without these settings, the release build is unsigned.
 - Keep signing files and passwords out of the repository.
+- To check, build, sign, and prepare Release upload files on Windows, run `powershell -ExecutionPolicy Bypass -File scripts/Build-Release.ps1` after configuring signing locally; see the [signing guide](docs/SIGNING.md).
 
 لتسجيل لقطات الواجهة · To record UI screenshots:
 
@@ -182,6 +184,7 @@ cd ChargeAlert
 - [المظهر · Appearance](docs/APPEARANCE.md)
 - [تقرير المراجعة · Project review](docs/PROJECT_REVIEW.md)
 - [تفاصيل التحقق من الإصدار · Release verification](docs/RELEASE.md)
+- [حفظ مفتاح الإصدار والبناء الموقّع · Release key and signed build guide](docs/SIGNING.md)
 - [عنوان ووصف GitHub Release الجاهزان للنسخ · Copy-ready GitHub Release title and description](docs/RELEASE_NOTES.md)
 - [المساهمة · Contributing](CONTRIBUTING.md)
 

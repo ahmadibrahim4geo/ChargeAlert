@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **تغييرات**
 
+- تجهيز APK من نوع Release موقّع بمفتاح إصدار مخصص بدل نسخة Debug السابقة؛ يلزم المفتاح نفسه لتحديثات Release القادمة.
 - توضيح المؤشر: قوس للشحن الحالي، وعلامة بيضاء منفصلة للهدف، ونبضة للشحن النشط، مع تفسير توقف الحركة وإزالة رسوم التقدم المكررة.
 - استبدال الأيقونة برمز أبسط للبطارية والبرق، مع نسخ تقليدية وتكيفية وأحادية.
 - تجهيز المشروع للبناء على GitHub، بملف APK حالي واحد وREADME بالشعار وبيانات المطور.
@@ -24,12 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 **إضافات**
 
+- سكربت Windows لبناء Release وفحصه والتحقق من توقيعه وتجهيز عنوان ووصف باللغتين وبصمة SHA-256، مع دليل لحفظ مفتاح التوقيع محليًا.
 - عشرة أنماط: خسوف القمر، عمق المحيط، حرير وردي، الميناء الذهبي، استوديو أبيض، أوجه الكريستال، زهرة الضوء، خطوط التضاريس، مسار المذنب، وأفق الغروب.
 - اختبارات مرئية للأنماط العشرين واختيار المعرض والتوافق مع الاختيارات المحفوظة سابقًا.
 
 ### English
 
 ### Changed
+- Prepared a Release APK signed with a dedicated release key, replacing the previous Debug download; future Release updates require the same key.
 - Clarified the charge indicator: one current-charge arc, a separate white target tick and an active-charging pulse. Explained paused motion and removed duplicate progress graphics.
 - Replaced the launcher artwork with a simpler battery-and-bolt mark, including legacy, adaptive and monochrome icons.
 - Prepared a portable GitHub project with one current APK, a logo-led README and developer contact details.
@@ -40,6 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Preserved the chosen design in reduced-motion and Battery Saver modes. Static designs do not run an animation clock.
 
 ### Added
+- Added a Windows Release build and verification script, bilingual upload notes, SHA-256 output, and a local signing-key guide.
 - Ten designs: Lunar Eclipse, Ocean Depth, Rose Silk, Golden Dial, Mono Studio, Crystal Facets, Light Bloom, Contour Lines, Comet Trail and Sunset Horizon.
 - Visual coverage for all twenty designs, gallery selection and compatibility with previously saved selections.
 

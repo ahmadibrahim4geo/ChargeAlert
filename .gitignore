@@ -56,8 +56,11 @@ ehthumbs.db
 Thumbs.db
 
 # Signing & Keystore files
+signing/
 *.jks
 *.keystore
+*.p12
+*.pfx
 debug.keystore
 
 # Machine-specific integrations and legacy generator metadata

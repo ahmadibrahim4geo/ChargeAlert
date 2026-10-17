@@ -6,7 +6,7 @@
 | Target | `main` |
 | Title | Charge Alert v1.1.0 — مظهر جديد وتنبيهات أوضح / New Designs & Clearer Alerts |
 | Attachment | [ChargeAlert.apk](../ChargeAlert.apk) |
-| Pre-release | نعم، لأن المرفق بناء Debug للتجربة · Yes, because the attachment is a Debug test build |
+| Pre-release | نعم، لحين إتمام اختبارات الهاتف الفعلي · Yes, pending physical-device validation |
 
 انسخ الوصف بدءًا من عنوان «⚡ Charge Alert v1.1.0 · تنبيه الشحن» وحتى بيانات المطور في خانة وصف الإصدار على GitHub، وأرفق ملف التطبيق أعلاه.
 
@@ -34,11 +34,11 @@ Copy the description from the “⚡ Charge Alert v1.1.0 · تنبيه الشح�
 
 حمّل ملف **ChargeAlert.apk** من مرفقات هذا الإصدار. يتطلب **Android 7.0 أو أحدث**.
 
-هذا إصدار تجريبي **Debug** موقّع بمفتاح تطوير محلي. التحديث فوق نسخة موجودة يتطلب تطابق مفتاح التوقيع. لم تُختبر دورة شحن أو يُقَس استهلاك الطاقة على هاتف فعلي بعد؛ ويظل بدء المراقبة والعرض الكامل خاضعين لقيود أندرويد وصلاحياته.
+هذا بناء **Release موقّع بمفتاح إصدار مخصص**، ومتاح كتجربة أولية لحين إتمام اختبارات الهاتف الفعلي. مفتاحه مختلف عن نسخة Debug السابقة، لذلك لا يمكن تثبيته كتحديث فوقها؛ احفظ إعداداتك قبل إزالة النسخة السابقة إذا ظهر تعارض توقيع. لم تُختبر دورة شحن أو يُقَس استهلاك الطاقة على هاتف فعلي بعد؛ ويظل بدء المراقبة والعرض الكامل خاضعين لقيود أندرويد وصلاحياته.
 
 **التحقق**
 
-اجتاز المشروع **36 اختبارًا**، ونجحت فحوصات الاختبارات وAndroid Lint والبناء على [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413). نتيجة Lint: صفر أخطاء و71 تحذيرًا.
+اجتاز المشروع **36 اختبارًا** محليًا، ونجح فحص Android Lint الخاص بـRelease والبناء. نتيجة Lint لـRelease: صفر أخطاء و54 تحذيرًا. يجري التحقق من توقيع ملف APK قبل تجهيزه للرفع. كما نجحت فحوصات نسخة Debug السابقة على [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
 
 ---
 
@@ -60,11 +60,11 @@ An update that improves the charging experience, makes battery readings and targ
 
 Download **ChargeAlert.apk** from this release's attachments. Requires **Android 7.0 or later**.
 
-This is a **Debug pre-release**, signed with a local development key. Updating an existing installation requires a matching signing key. A full charging cycle and actual power consumption have not yet been tested on a physical phone; background monitoring and full-screen display remain subject to Android restrictions and permissions.
+This is a **Release build signed with a dedicated release key**, offered as a pre-release pending physical-device validation. Its key differs from the previous Debug build, so it cannot update that installation; save your settings before removing the previous copy if Android reports a signature conflict. A full charging cycle and actual power consumption have not yet been tested on a physical phone; background monitoring and full-screen display remain subject to Android restrictions and permissions.
 
 **Validation**
 
-The project passed **36 tests**, and the tests, Android Lint, and build checks succeeded on [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413). Lint reported zero errors and 71 warnings.
+The project passed **36 tests** locally, along with Release Android Lint and the build. Release Lint reported zero errors and 54 warnings. The APK signature is verified before preparing the upload files. The previous Debug checks also succeeded on [GitHub Actions](https://github.com/ahmadibrahim4geo/ChargeAlert/actions/runs/39014827413).
 
 ---
 
